@@ -1,11 +1,15 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/rendering.dart';
 
-void main() => runApp(new MyApp());
+void main() {
+  //debugPaintSizeEnabled = true;
+  runApp(new MyApp());}
 
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner:false,
       title: 'Hello World to Flutter',
       theme: ThemeData(
         primarySwatch: Colors.blue,
